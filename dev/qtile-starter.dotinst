@@ -1,0 +1,31 @@
+{
+	"name": "ML4W Qtile Starter DEV",
+	"id": "com.ml4w.qtilestarter.dev",
+	"description": "Starter package for your Qtile experiments",
+	"version":"2.0",
+	"author": "Stephan Raabe",
+	"homepage": "https://github.com/mylinuxforwork/qtile-starter",
+	"dependencies": "https://github.com/mylinuxforwork/qtile-starter",
+	"source": "Projects/qtile-starter",
+	"subfolder": "dotfiles",
+	"setupscript":"setup.sh",
+	"restore":[
+		{
+			"title":"ML4W Settings",
+			"source":".config/qtile/autostart.sh",
+			"value":true
+		}
+	],
+	"settings":[
+		{
+			"type":"text",
+			"mode":"replacesingleline",
+			"title":"Keyboard Layout",
+			"file":".config/qtile/autostart.sh",
+			"checkpoint":"Check",
+			"search":"setxkbmap",
+			"value":"us",
+			"template":"setxkbmap [VALUE]"
+		}
+	]
+}

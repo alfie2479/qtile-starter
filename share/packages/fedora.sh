@@ -1,4 +1,20 @@
-packagesPacman=(
+# ----------------------------------------------------------
+# Packages
+# ----------------------------------------------------------
+
+packages=(
+    "qtile" 
+    "picom"
+    "scrot"
+    "slock"
+    "xorg"
+    "xorg-xinit"
+    "nitrogen"
+    "python-dbus-next"
+    "python-iwlib"
+    "xautolock" 
+    "flatpak"
+
     "pacman-contrib"
     "sed"
     "vim"
@@ -64,12 +80,10 @@ packagesPacman=(
     "zsh"
     "fzf"
     "zsh-completions"
-);
 
-packagesYay=(
     "bibata-cursor-theme" 
     "trizen"
     "pacseek"
     "smile"
-    "oh-my-posh"
-);
+    "oh-my-posh"        
+)
