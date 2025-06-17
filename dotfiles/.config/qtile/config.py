@@ -62,7 +62,7 @@ platform = int(os.popen("cat /sys/class/dmi/id/chassis_type").read())
 # Set default apps
 # --------------------------------------------------------
 
-terminal = "alacritty"        
+terminal = "kitty"        
 
 # --------------------------------------------------------
 # Keybindings
@@ -145,7 +145,7 @@ dgroups_key_binder = simple_key_binder(mod)
 groups.append(ScratchPad("6", [
     DropDown("chatgpt", lazy.spawn("bash " + home + "/.config/ml4w/settings/ai.sh"), x=0.3, y=0.1, width=0.40, height=0.4, on_focus_lost_hide=False ),
     DropDown("mousepad", "mousepad", x=0.3, y=0.1, width=0.40, height=0.4, on_focus_lost_hide=False ),
-    DropDown("terminal", "alacritty", x=0.3, y=0.1, width=0.40, height=0.4, on_focus_lost_hide=False ),
+    DropDown("terminal", "kitty", x=0.3, y=0.1, width=0.40, height=0.4, on_focus_lost_hide=False ),
     DropDown("scrcpy", "scrcpy -d", x=0.8, y=0.05, width=0.15, height=0.6, on_focus_lost_hide=False )
 ]))
 
@@ -328,12 +328,12 @@ widget_list = [
         visible_on_warn=False,
         format="{p} {uf}{m} ({r:.0f}%)"
     ),
-    widget.Bluetooth(
-        **decor_right,
-        background=Color2+".4",
-        padding=10,
-        mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("blueman-manager")},
-    ),
+    #widget.Bluetooth(
+    #    **decor_right,
+    #    background=Color2+".4",
+    #    padding=10,
+    #    mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("blueman-manager")},
+    #),
     widget.Wlan(
         **decor_right,
         background=Color2+".4",
