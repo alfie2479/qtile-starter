@@ -1,7 +1,16 @@
 # ML4W Dotfiles for Qtile
 
-![image](https://github.com/user-attachments/assets/8c62ea30-d75b-424a-8d7c-198692e1942b)
+You can install the ML4W Qtile Starter with the Dotfiles Installer from an existing Window Manager or Desktop Environment.
 
+<a href="https://mylinuxforwork.github.io/dotfiles-installer/" target="_blank"><img src="https://mylinuxforwork.github.io/dotfiles-installer/dotfiles-installer-badge.png" style="border:0;margin-bottom:10px"></a>
+
+More information about the installation of the Dotfiles Installer here: https://github.com/mylinuxforwork/dotfiles-installer/wiki/01-Installation
+
+Copy the following url into the Dotfiles Installer.
+
+```
+https://raw.githubusercontent.com/mylinuxforwork/qtile-starter/main/qtile-starter.dotinst
+```
 ## Main Packages
 
 - Terminal: alacritty
